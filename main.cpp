@@ -63,8 +63,18 @@ int main()
 
     for(int i = 0; i < skolkoDlinnyhSlov; i++)
         for(int j = i+1; j < skolkoDlinnyhSlov; j++)
-            if(strlen(dlinnyeSlova[j]) <= strlen(dlinnyeSlova[i]))
+        {
+            if (strlen(dlinnyeSlova[j]) <= strlen(dlinnyeSlova[i]))
                 std::swap(dlinnyeSlova[j], dlinnyeSlova[i]);
+            if (strcmp(dlinnyeSlova[j], dlinnyeSlova[i]) == 0)
+            {
+                std::cout << "COPY DETECTED" << std::endl;
+                for(int c = 0; c<MAX_DLINA_SLOVA; c++)
+                dlinnyeSlova[j][c] = 0;
+            }
+        }
+
+                //strcpy_s(dlinnyeSlova[i],dlinnyeSlova[1]);
 
     ArriveOutput(charray, vyhod, dlinnyeSlova, howMuchLength, skolkoDlinnyhSlov);
     return 0;
