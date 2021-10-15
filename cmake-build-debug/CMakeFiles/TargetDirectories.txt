@@ -1,0 +1,3 @@
+D:/git/Strings2/cmake-build-debug/CMakeFiles/Strings2.dir
+D:/git/Strings2/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/git/Strings2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
